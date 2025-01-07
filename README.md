@@ -57,41 +57,6 @@ Key objectives:
 - **Confusion Matrix**:
   - Visualizes the performance of models in terms of predicted vs. actual classes.
 
----
-
-## 💻 How to Use
-### Prerequisites
-1. **Install Python 3.8+**
-2. **Install required libraries**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/predict-bacterial-virulence.git
-   cd predict-bacterial-virulence
-   ```
-2. Place your dataset in the `data/` directory.
-3. Preprocess the data:
-   ```bash
-   python preprocess.py
-   ```
-4. Train models:
-   ```bash
-   python train_models.py
-   ```
-5. Generate predictions:
-   ```bash
-   python evaluate_models.py
-   ```
-
-### Interactive Output
-| **Command**                        | **Output Description**                                                                        |
-|------------------------------------|---------------------------------------------------------------------------------------------|
-| `python evaluate_models.py`        | - Classification metrics in a tabular format.<br>- Interactive ROC-AUC plots for model comparison. |
-| `python visualize_features.py`     | - Feature importance heatmap.<br>- LIME visualizations for selected predictions.             |
 
 ---
 
@@ -112,21 +77,6 @@ Key objectives:
 | Support Vector Machines (SVM)   | 0.88          | 0.84       | 0.86         | 0.950       | Suitable for smaller datasets with clear separable classes.                                    |
 | Linear Regression               | 0.87          | 0.83       | 0.85         | 0.946       | Basic predictions where linear relationships dominate.                                         |
 
-### Key Insights:
-- **Random Forest** emerged as the most reliable model across multiple metrics.
-- **Feature Importance**:
-  - `Immune_killing` and `Systemic_Nonsystemic` ranked highest in influencing predictions.
-- **Pathogens** with limited transmissibility and systemic infections had higher predicted virulence.
-
-### Interactive Visualizations
-1. **Feature Importance Heatmap**:
-   ![Feature Importance Heatmap](sandbox:/mnt/data/feature_importance_heatmap.png)
-
-2. **Confusion Matrix**:
-   ![Confusion Matrix](sandbox:/mnt/data/confusion_matrix.png)
-
-3. **ROC Curve**:
-   ![ROC Curve](sandbox:/mnt/data/roc_curve.png)
 
 ---
 
@@ -146,4 +96,4 @@ Key objectives:
 
 ---
 
-This README integrates detailed content with interactive features and visualizations, making it accessible to both technical and non-technical audiences. Let me know if you'd like further refinement!
+
